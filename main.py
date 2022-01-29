@@ -13,7 +13,14 @@ def send_welcome(message):
 @bot.message_handler(commands=["how"])
 def send_message(message):
   bot.send_message(message.chat.id, "https://t.me/aastrem")
-
+  
+@bot.message_handler(commands=["Hi"])
+def sned_message(message):
+  bot.send_message(message,"HI! how are you")
+  
+@bot.message_handler(commands=["123"])
+def send_message(message):
+  bot.send_message(message,"me mage palamu bot thawa bot keneggen hamu wemu bye!")
 
 
 bot.polling()
